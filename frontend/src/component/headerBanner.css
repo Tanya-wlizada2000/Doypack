@@ -1,0 +1,123 @@
+/* Styles for the slider container */
+.slider-container {
+  margin: 0 auto; /* Center the container horizontally */
+  
+}
+/* Styles for the container holding social media icons */
+.iconsMedia {
+  text-align: center; /* Center align the icons */
+}
+
+/* Styles for social media links */
+.iconsMedia a {
+  color: #fff; /* Default icon color */
+  padding: 5px; /* Padding around the icons */
+}
+
+/* Styles for social media links on hover */
+.iconsMedia a:hover {
+  color: #e5750f; /* Change color on hover */
+  transition: 1s;
+}
+
+
+
+/* Styles for navbar buttons */
+.navbar-button {
+  background-color: #e5750f; /* Button background color */
+  color: #fff; /* Text color for the button */
+  border: none; /* Remove border */
+  padding: 0.6rem 3rem; /* Padding inside the button */
+  border-radius: 20px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Styles for navbar buttons on hover */
+.navbar-button:hover {
+  background-color: #fff; /* Button background color on hover */
+  color: #e5750f; /* Text color on hover */
+  border: 1px solid #e5750f; /* Border on hover */
+  transition: 1s; /* Smooth transition for hover effect */
+}
+
+
+
+/* VideoBackground.css */
+
+/* VideoBackground.css */
+
+.video-background {
+  position: relative;
+  width: 100%;
+  height: 90vh; /* Full viewport height */
+  overflow: hidden;
+  display: flex; /* Center content horizontally and vertically */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video covers the container */
+  z-index: -1; /* Puts the video behind other content */
+  /* Add vendor prefixes for compatibility */
+  -webkit-object-fit: cover;
+  -moz-object-fit: cover;
+  -ms-object-fit: cover;
+  background: none;
+}
+
+.content {
+  position: relative;
+  z-index: 1; /* Ensure content is above the video */
+  color: white; /* Change text color for visibility */
+  text-align: center;
+  padding: 20px;
+  /* Adjust font size and padding for smaller screens */
+}
+@media screen and (max-width: 1200px) {
+  .video-background {
+    width: 100%;
+    height: 60vh; /* Full viewport height */
+   
+  }
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .content {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+  .content h1 {
+    font-size: 30px;
+  }
+  .navbar-button{
+    display: none;
+    
+  }
+}
+
+
+
+@media (max-width: 480px) {
+  .content {
+    font-size: 1rem;
+    padding: 5px;
+  }
+}
+
+
+
+@media screen and (max-width: 400px) {
+  .navbar-button {
+   margin-bottom: 30px;
+  }
+}
+
+

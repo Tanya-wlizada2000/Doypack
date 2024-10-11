@@ -1,0 +1,57 @@
+/* Importing the Montserrat font family from Google Fonts with various weights and italics */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Root-level CSS variables and global settings */
+:root {
+  /* Setting the default font family to Montserrat, a sans-serif typeface */
+  font-family: "Manrope", sans-serif;
+  /* Setting line height for better readability */
+  line-height: 1.5;
+  /* Default font weight for text */
+  font-weight: 400;
+
+  /* Enabling support for both light and dark color schemes */
+  color-scheme: light dark;
+  /* Default text color with slight transparency */
+  color: rgba(0, 0, 0, 0.87);
+  /* Default background color */
+  background-color: #ffffff;
+
+  /* Disabling font synthesis to use only the specified weights and styles */
+  font-synthesis: none;
+  /* Optimizing text rendering for better legibility */
+  text-rendering: optimizeLegibility;
+  /* Enhancing font smoothing for webkit browsers */
+  -webkit-font-smoothing: antialiased;
+  /* Enhancing font smoothing for Firefox on macOS */
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Universal selector to apply styles to all elements */
+* {
+  /* Resetting margin and padding to zero for a consistent layout */
+  margin: 0;
+  padding: 0;
+  /* Ensuring the box-sizing model is set to border-box to include padding and border in the element's total width and height */
+  box-sizing: border-box;
+}
+
+/* Styles for anchor tags */
+a {
+  /* Removing the default underline from links */
+  text-decoration: none;
+}
+
+/* Container class for general layout */
+.container {
+  /* Setting width to 100% to take up the full available width */
+  width: 100%;
+  /* Centering the container by setting automatic margins */
+  margin: 0 auto;
+}
+
+/* Container for items with a maximum width constraint */
+.itemsContainer {
+  /* Centering the container by setting automatic margins */
+  margin: 0 auto;
+}
