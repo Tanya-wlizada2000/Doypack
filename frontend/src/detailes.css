@@ -74,9 +74,7 @@
   border: none;
 } */
 
-.specs{
-  overflow: scroll;
-}
+
 
 
 
@@ -160,6 +158,10 @@
 @media screen and (max-width: 650px) {
   .custom-table{
     width: 400px;
+  }
+
+  .specs{
+    overflow: scroll;
   }
   
 }
